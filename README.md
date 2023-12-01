@@ -1,8 +1,29 @@
-# React + Vite
+# Seasonal Sentiments
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+## Usage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Here is the deployed app: [Check it out!](https://Insert.Real.URL.HERE.herokuapp.com/)
+
+![Screenshot of Seasonal Sentiment](./views/assets/screenshot.png)
+
+## Credits
+
+Kevin Smith - [GitHub](https://github.com/kevinsmithseven) <br/>
+Kevin Serrano - [GitHub](https://github.com/felipeokay) <br/>
+Shanna Brooks - [GitHub](https://github.com/shanna-not-shawna) <br/>
+Austin Tynes - [GitHub](https://github.com/austintynes) <br/>
+
+## License
+
+This project is covered under the MIT License.
+
+## Badges
+
+![MIT Badge](https://img.shields.io/badge/License-MIT-blue)
+
+
+## How to Contribute
+
+If you wish to contribute to this project, please reach out to the developers.
