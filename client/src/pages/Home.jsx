@@ -1,13 +1,12 @@
-import ProductList from "../components/ProductList";
-import CategoryMenu from "../components/CategoryMenu";
-import Cart from "../components/Cart";
+// import ProductList from "../components/ProductList";
+// import CategoryMenu from "../components/CategoryMenu";
+// import Cart from "../components/Cart";
+import TempHero from "../../public/images/TempHero.jpg";
 
 const Home = () => {
   return (
     <div className="container">
-      <CategoryMenu />
-      <ProductList />
-      <Cart />
+      <img src={TempHero}></img>
     </div>
   );
 };
