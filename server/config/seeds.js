@@ -8,13 +8,11 @@ db.once('open', async () => {
   await cleanDB('User', 'users');
 
 
-  // test categories to get started with. I was thinking "other religions" sounded wrong. Those can be in with traditional I guess?
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' },
+    { name: 'Traditional' },
+    { name: 'Funny' },
+    { name: 'Boring' },
+    { name: 'Dark Humor' },
   ]);
 
   console.log('categories seeded');
@@ -94,7 +92,7 @@ db.once('open', async () => {
     },
     {
       name: 'Merry and Bright 5',
-      category: categories[4]._id,
+      category: categories[2]._id,
       description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
       image: 'merryandbright.png',
       price: .99,
@@ -102,7 +100,7 @@ db.once('open', async () => {
     },
     {
       name: 'Obligatory Gesture 5',
-      category: categories[4]._id,
+      category: categories[2]._id,
       description:
         'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
       image: 'obligatorygesture.png',
@@ -111,7 +109,7 @@ db.once('open', async () => {
     },
     {
       name: 'Merry and Bright 6',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
       image: 'merryandbright.png',
@@ -120,7 +118,7 @@ db.once('open', async () => {
     },
     {
       name: 'Obligatory Gesture 6',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
       image: 'obligatorygesture.png',
