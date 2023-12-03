@@ -10,10 +10,11 @@ db.once('open', async () => {
 
   // test categories to get started with. I was thinking "other religions" sounded wrong. Those can be in with traditional I guess?
   const categories = await Category.insertMany([
-    { name: 'Traditional' },
-    { name: 'DarkHumor' },
-    { name: 'Boring' },
-    { name: 'Snarky' },
+    { name: 'Food' },
+    { name: 'Household Supplies' },
+    { name: 'Electronics' },
+    { name: 'Books' },
+    { name: 'Toys' },
   ]);
 
   console.log('categories seeded');
