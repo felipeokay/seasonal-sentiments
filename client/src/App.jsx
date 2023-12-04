@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 import { Outlet } from 'react-router-dom';
 import {
   ApolloClient,
