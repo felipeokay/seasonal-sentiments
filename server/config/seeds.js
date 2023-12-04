@@ -13,6 +13,7 @@ db.once('open', async () => {
     { name: 'Funny' },
     { name: 'Boring' },
     { name: 'Dark Humor' },
+    { name: 'Most Popular' },
   ]);
 
   console.log('categories seeded');
@@ -32,7 +33,7 @@ db.once('open', async () => {
       description:
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
       image: 'obligatorygesture.png',
-      category: categories[0]._id,
+      category: [categories[0]._id, categories[4]._id],
       price: .99,
       quantity: 500,
     },
@@ -56,7 +57,7 @@ db.once('open', async () => {
     },
     {
       name: 'Merry and Bright 3',
-      category: categories[1]._id,
+      category: [categories[1]._id, categories[4]._id],
       description:
         'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
       image: 'merryandbright.png',
@@ -100,7 +101,7 @@ db.once('open', async () => {
     },
     {
       name: 'Obligatory Gesture 5',
-      category: categories[2]._id,
+      category: [categories[2]._id, categories[4]._id],
       description:
         'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
       image: 'obligatorygesture.png',
@@ -118,13 +119,13 @@ db.once('open', async () => {
     },
     {
       name: 'Obligatory Gesture 6',
-      category: categories[3]._id,
+      category: [categories[3]._id, categories[4]._id],
       description:
         'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
       image: 'obligatorygesture.png',
       price: .99,
       quantity: 500,
-    }
+    }, 
   ]);
 
   console.log('products seeded');
