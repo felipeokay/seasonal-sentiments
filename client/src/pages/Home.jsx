@@ -1,7 +1,7 @@
 // import ProductList from "../components/ProductList";
 // import CategoryMenu from "../components/CategoryMenu";
 // import Cart from "../components/Cart";
-import TempHero from "../../public/images/TempHero.jpg";
+import TempHero from "../images/temphero.jpg";
 
 const Home = () => {
   return (
