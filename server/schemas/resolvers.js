@@ -19,7 +19,7 @@ const resolvers = {
                     $regex: name
                 };
             }
-
+            console.log(await Product.find(params).populate('category'))
             return await Product.find(params).populate('category');
         },
         product: async (parent, { _id }) => {

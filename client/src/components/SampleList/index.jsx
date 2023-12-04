@@ -33,27 +33,28 @@ function ProductList() {
   }, [data, loading, dispatch]);
 
   function filterProducts() {
-    if (!currentCategory) {
-      return state.products;
-    }
-    console.log("I got here", state.products);
-    console.log("I got here", currentCategory);
+    console.log("I got here", state.products)
+    // if (!currentCategory) {
+    //   return state.products;
+    // }
+   
+
     return state.products.filter(
-      (product) => {
-        if (product.category[0]?._id === currentCategory){
-          return true
-        } 
-        if (product.category[1]?._id === currentCategory){
-          return true
+        (product) => {
+          if (product.category[0]?.name === "Most Popular"){
+            return true
+          } 
+          if (product.category[1]?.name === "Most Popular"){
+            return true
+          }
+            return false
         }
-          return false
-      }
-    );
+      );
   }
 
   return (
     <div className="my-2">
-      <h2>Our Products:</h2>
+      <h2>Most Popular Cards:</h2>
       {state.products.length ? (
         <div className="flex-row">
           {filterProducts().map((product) => (
