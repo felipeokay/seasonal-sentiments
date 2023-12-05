@@ -2,14 +2,17 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+Motivation behind `Seasonal Sentiments` is to potentially bring joy, warmth, and smiles to people's faces during the festive season. Our creations can become a part of cherished holiday traditions.
+This project was built for the opportunity to connect with customers who share a love for the holiday season and appreciate the personal touch of a handmade or thoughtfully designed card.
+Traditional retail stores may have limited selections or require physical visits. During the holiday season, physical stores can become crowded, leading to a less enjoyable shopping experience. 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
 
-## Table of Contents (Optional)
+`Seasonal Sentiments` provide a wide variety of Christmas cards, and customers can browse and purchase from the comfort of their homes at any time. Furthermore, we offer direct mailing services, allowing customers to send cards directly to recipients with personalized messages.
+
+
+When building `Seasonal Sentiments` we have learned e-commerce concepts such as, shopping cart functionality, payment integration, & product listings, etc. Also, allowing users to create accounts for a personalized experience and creating visually appealing and unique card designs.
+
+## Table of Contents
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
 
