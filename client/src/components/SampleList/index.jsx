@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
-import ProductItem from '../ProductItem';
+import SampleItem from '../SampleItem';
 import { useStoreContext } from '../../utils/GlobalState';
 import { UPDATE_PRODUCTS } from '../../utils/actions';
 import { useQuery } from '@apollo/client';
 import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 
-function ProductList() {
+function SampleList() {
   const [state, dispatch] = useStoreContext();
 
   const { currentCategory } = state;
@@ -58,7 +58,7 @@ function ProductList() {
       {state.products.length ? (
         <div className="flex-row">
           {filterProducts().map((product) => (
-            <ProductItem
+            <SampleItem
               key={product._id}
               _id={product._id}
               image={product.image}
@@ -75,4 +75,4 @@ function ProductList() {
   );
 }
 
-export default ProductList;
+export default SampleList;
