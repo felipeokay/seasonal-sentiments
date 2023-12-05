@@ -60,7 +60,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'Lovely place for the tree',
-      image: 'magical christmas.png',
+      image: 'Merry Christmas, happy new year.png',
       price: .99,
       quantity: 500,
     },
