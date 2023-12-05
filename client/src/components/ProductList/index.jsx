@@ -36,8 +36,8 @@ function ProductList() {
     if (!currentCategory) {
       return state.products;
     }
-    console.log("I got here", state.products);
-    console.log("I got here", currentCategory);
+    // console.log("I got here", state.products);
+    // console.log("I got here", currentCategory);
     return state.products.filter(
       (product) => {
         if (product.category[0]?._id === currentCategory){

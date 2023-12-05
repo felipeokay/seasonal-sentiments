@@ -33,7 +33,7 @@ function SampleList() {
   }, [data, loading, dispatch]);
 
   function filterProducts() {
-    console.log("I got here", state.products)
+    // console.log("I got here", state.products)
     // if (!currentCategory) {
     //   return state.products;
     // }
