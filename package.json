@@ -1,5 +1,5 @@
 {
-  "name": "mern-shopping",
+  "name": "seasonal-sentiments",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -15,5 +15,10 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "bcrypt": "^5.0.0",
+    "postcss": "^8.4.32"
   }
 }
