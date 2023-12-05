@@ -18,9 +18,7 @@ const Cart = () => {
   const [state, dispatch] = useStoreContext();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
-  console.log(import.meta.env.VITE_PUBLISHKEY);
-
-  // We check to see if there is a data object that exists, if so this means that a checkout session was returned from the backend
+   // We check to see if there is a data object that exists, if so this means that a checkout session was returned from the backend
   // Then we should redirect to the checkout with a reference to our session id
   useEffect(() => {
     if (data) {
