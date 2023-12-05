@@ -11,7 +11,7 @@ db.once('open', async () => {
   const categories = await Category.insertMany([
     { name: 'Traditional' },
     { name: 'Funny' },
-    { name: 'Boring' },
+    { name: 'Jokes' },
     { name: 'Dark Humor' },
     { name: 'Most Popular' },
   ]);
@@ -20,109 +20,172 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Merry and Bright',
+      name: 'Happy Holidays',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'merryandbright.png',
-      category: categories[0]._id,
-      price: .99,
-      quantity: 500,
-    },
-    {
-      name: 'Obligatory Gesture',
-      description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'obligatorygesture.png',
+        'A festive winter scene that defies the laws of physics',
+      image: 'Happy_Holidays.jpg',
       category: [categories[0]._id, categories[4]._id],
       price: .99,
       quantity: 500,
     },
     {
-      name: 'Merry and Bright 2',
-      category: categories[1]._id,
+      name: 'Happy Kwanzaa',
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'merryandbright.png',
+        'A festive kwanzaa scene',
+      image: 'Happy_Kwanzaa.jpg',
+      category: categories[0]._id,
       price: .99,
       quantity: 500,
     },
     {
-      name: 'Obligatory Gesture 2',
-      category: categories[1]._id,
+      name: 'Laughter and Cheer',
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'obligatorygesture.png',
+        'A happy holiday family scene',
+      image: 'laughter and cheer.png',
+      category: categories[0]._id,
       price: .99,
       quantity: 500,
     },
     {
-      name: 'Merry and Bright 3',
+      name: 'Magical Christmas',
+      category: categories[0]._id,
+      description:
+        'A festive house during the holidays',
+      image: 'magical christmas.png',
+      price: .99,
+      quantity: 500,
+    },
+    {
+      name: 'Merry Christmas and a Happy New Year!',
+      category: categories[0]._id,
+      description:
+        'Lovely place for the tree',
+      image: 'magical christmas.png',
+      price: .99,
+      quantity: 500,
+    },
+    {
+      name: 'Happy Christmahanukwanzakah',
+      category: categories[1]._id,
+      description:
+        'A celebration of all three religious holidays',
+      image: 'Happy_Christmahanukwanzakah_1.png',
+      price: .99,
+      quantity: 500,
+    },
+    {
+      name: 'Merry Stressmas',
       category: [categories[1]._id, categories[4]._id],
       description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'merryandbright.png',
+        'A stressed out elf',
+      image: 'Merry_Stressmas.png',
       price: .99,
       quantity: 500,
     },
     {
-      name: 'Obligatory Gesture 3',
-      category: categories[2]._id,
+      name: 'Seasons Greetings Colleagues',
+      category: categories[1]._id,
       description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
-      image: 'obligatorygesture.png',
+        'Workplace holiday humor',
+      image: 'Seasons_Greetings_IIC.jpg',
       price: .99,
       quantity: 500,
     },
     {
-      name: 'Merry and Bright 4',
-      category: categories[2]._id,
+      name: 'Sorry About Last Year',
+      category: categories[1]._id,
       description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
-      image: 'merryandbright.png',
+        'Sorry about the christmas house fire! Happy Holidays!',
+      image: 'Sorry about last year.png',
       price: .99,
       quantity: 500,
     },
     {
-      name: 'Obligatory Gesture 4',
-      category: categories[3]._id,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'obligatorygesture.png',
+      name: 'Tolerable Christmas',
+      category: categories[1]._id,
+      description: 'Just gotta get through it',
+      image: 'Tolerable Christmas.png',
       price: .99,
       quantity: 500,
     },
     {
-      name: 'Merry and Bright 5',
-      category: categories[2]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
-      image: 'merryandbright.png',
-      price: .99,
-      quantity: 500,
-    },
-    {
-      name: 'Obligatory Gesture 5',
+      name: 'Feeling Crumby',
       category: [categories[2]._id, categories[4]._id],
       description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
-      image: 'obligatorygesture.png',
+        'Gingerbread men get sick too',
+      image: 'feelingcrumby.png',
       price: .99,
       quantity: 500,
     },
     {
-      name: 'Merry and Bright 6',
+      name: 'Oblivious Snowman',
+      category: categories[2]._id,
+      description:
+        'Just a matter of time',
+      image: 'puddle.png',
+      price: .99,
+      quantity: 500,
+    },
+    {
+      name: 'Sherlock Snow',
+      category: categories[2]._id,
+      description:
+        'Elementary my dear snowman',
+      image: 'sherlock snow.png',
+      price: .99,
+      quantity: 500,
+    }, 
+    {
+      name: 'Wrap Santa',
+      category: categories[2]._id,
+      description:
+        'The O.S.C',
+      image: 'wrap.png',
+      price: .99,
+      quantity: 500,
+    }, 
+    {
+      name: 'Chaotic Lovelife',
       category: categories[3]._id,
       description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
-      image: 'merryandbright.png',
+        'Gotta hand it to her',
+      image: 'chaotic lovelife.png',
       price: .99,
       quantity: 500,
-    },
+    }, 
     {
-      name: 'Obligatory Gesture 6',
+      name: 'Eggnog',
       category: [categories[3]._id, categories[4]._id],
       description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
-      image: 'obligatorygesture.png',
+        'Go ahead and add in that rum',
+      image: 'drink eggnog.png',
+      price: .99,
+      quantity: 500,
+    }, 
+    {
+      name: 'Drunk Santa',
+      category: categories[3]._id,
+      description:
+        'Shots for Santa!',
+      image: 'merry drunk.png',
+      price: .99,
+      quantity: 500,
+    }, 
+    {
+      name: 'Merry Christmas, Billy!',
+      category: categories[3]._id,
+      description:
+        'You are on the naughty list',
+      image: 'Merry_Christmas_B____.jpg',
+      price: .99,
+      quantity: 500,
+    }, 
+    {
+      name: 'Cousin Eddie',
+      category: categories[3]._id,
+      description:
+        'Save the neck for me, Clark',
+      image: 'sh_____ was full!.png',
       price: .99,
       quantity: 500,
     }, 
