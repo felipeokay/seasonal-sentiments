@@ -1,7 +1,7 @@
 function Footer(){
     return (
-    <div className="footer text-3xl font-bold underline text-red-600">
-        <p>This is a boring footer. We'll make it cool later.</p>
+    <div className="footer text-3xl font-bold underline text-red-600 sm:p-8 m-10">
+        <p>© Seasonal Sentiments | Contact us at seasonalsentiments@email.com</p>
     </div>
     )
 }
