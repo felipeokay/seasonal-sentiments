@@ -1,9 +1,11 @@
-function Footer(){
+export default function Footer() {
     return (
-    <div className="footer text-3xl font-bold underline text-red-600 sm:p-8 m-10">
-        <p>© Seasonal Sentiments | Contact us at seasonalsentiments@email.com</p>
-    </div>
-    )
+        <footer className="bg-gray-800 text-white p-4 mt-auto border-t border-gray-600">
+            <div className="container mx-auto text-center">
+            <p>© Seasonal Sentiments | Contact us at seasonalsentiments@email.com</p>
+            </div>
+        </footer>
+    );
 }
 
-export default Footer;
+

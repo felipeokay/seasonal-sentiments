@@ -53,10 +53,11 @@ function SampleList() {
   }
 
   return (
-    <div className="my-2">
-      <h2>Most Popular Cards:</h2>
+    <div className="hero">
+    <div className="my-40 text-center">
+      <h2>Popular Easy Picks!</h2>
       {state.products.length ? (
-        <div className="flex-row">
+        <div className="flex-row my-20 m-auto">
           {filterProducts().map((product) => (
             <SampleItem
               key={product._id}
@@ -71,6 +72,7 @@ function SampleList() {
       ) : (
         <h3>You haven't added any products yet!</h3>
       )}
+    </div>
     </div>
   );
 }

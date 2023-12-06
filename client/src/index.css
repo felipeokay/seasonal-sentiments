@@ -15,6 +15,15 @@
   background-color: whitesmoke;
 }
 
+.hero {
+  background-image: url("/src/images/coolsnow.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 * {
   box-sizing: border-box;
 }
