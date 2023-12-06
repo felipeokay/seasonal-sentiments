@@ -65,8 +65,18 @@ h1 {
   font-size: 2.25rem;
 }
 
+.div.container {
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
 h2 {
   font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 h3 {
@@ -240,6 +250,14 @@ input:focus {
   overflow: hidden;
   margin: 6px;
   border: black;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  background-color: #1bbf70;
+  margin-top: 100px;
 }
 
 img {

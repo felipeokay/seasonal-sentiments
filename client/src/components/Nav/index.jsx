@@ -55,7 +55,7 @@ function Nav() {
   }
 
   return (
-    <header className="bg-gray-800 p-1">
+    <header>
       <h1>
         <div className="container mx-auto text-center m-2">
           <Link to="/">
