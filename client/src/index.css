@@ -22,6 +22,10 @@
   border-radius: 20px;
 }
 
+a {
+  margin-bottom: 20px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -77,6 +81,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  
 }
 
 h3 {
@@ -112,7 +117,7 @@ a:hover {
 }
 
 header {
-  background-image: url("/src/images/lights.jpg");
+  background-image: url("/src/images/lightblur.jpg");
   background-size: cover;
   background-position: center; /* Optional: Center the background image */
   background-repeat: no-repeat;
@@ -253,11 +258,11 @@ input:focus {
 }
 
 footer {
-  position: fixed;
+  position: absolute;
   width: 100%;
   bottom: 0px;
   background-color: #1bbf70;
-  margin-top: 100px;
+  margin-top: 180px;
 }
 
 img {
