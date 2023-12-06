@@ -8,9 +8,11 @@ function Nav() {
       return (
         <ul className="flex-row">
           <li className="mx-10 m-5">
+            {/* <div className="container mx-auto text-center"> */}
             <Link to="/store">
               Store
             </Link>
+            {/* </div> */}
           </li>
           <li className="mx-10 m-5">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
@@ -24,19 +26,25 @@ function Nav() {
       return (
         <ul className="flex-row">
           <li className="mx-10 m-5">
+            <div className="container mx-auto text-center my-10">
             <Link to="/store">
               Store
             </Link>
+            </div>
           </li>
           <li className="mx-10 m-5">
+            <div className="container mx-auto text-center my-10">
             <Link to="/signup">
               Signup
             </Link>
+            </div>
           </li>
           <li className="mx-10 m-5">
+            <div className="container mx-auto text-center my-10">
             <Link to="/login">
               Login
             </Link>
+            </div>
           </li>
         </ul>
       );
@@ -46,9 +54,11 @@ function Nav() {
   return (
     <header className="flex-row px-80">
       <h1>
+      <div className="container mx-auto text-center m-3">
         <Link to="/">
           Seasonal Sentiments
         </Link>
+        </div>
       </h1>
 
       <nav>

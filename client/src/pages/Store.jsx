@@ -4,11 +4,13 @@ import Cart from "../components/Cart";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className = "hero">
+      < div className = "container" >
       <CategoryMenu />
       <ProductList />
       <Cart />
-    </div>
+    </div >
+    </div >
   );
 };
 
