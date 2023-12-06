@@ -6,13 +6,13 @@ import { idbPromise } from "../../utils/helpers";
 
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
-
+  // console.log(item);
   const {
     image,
     name,
     _id,
     price,
-    quantity
+    image_url
   } = item;
 
   const { cart } = state
