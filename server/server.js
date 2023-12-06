@@ -14,6 +14,34 @@ const server = new ApolloServer({
   resolvers,
 });
 
+const dotenv = require("dotenv").config();
+const cors = require("cors");
+const bodyParser = require("body-parser");
+const sendEmail = require("./utils/sendEmail.js");
+
+app.use(express.json());
+app.use(bodyParser.json());
+app.use(cors());
+app.options("/api/sendemail", cors());
+
+app.post("/api/sendemail", async (req, res) => {
+  const { email, message, senderName, friendName, imageUrl } = req.body;
+
+  try {
+    const send_to = email;
+    const sent_from = "Seasonal Sentiments";
+    const reply_to = email;
+    const subject = "A special holiday greeting from " + senderName;
+    const emailText = message;
+
+    await sendEmail(subject, emailText, send_to, sent_from, reply_to, imageUrl, friendName, senderName);
+    res.status(200).json({ success: true, message: "Email Sent" });
+  } catch (error) {
+    console.error("Error sending email:", error);
+    res.status(500).json({ success: false, message: "Internal Server Error" });
+  }
+});
+
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async () => {
   await server.start();
@@ -44,5 +72,4 @@ const startApolloServer = async () => {
   });
 };
 
-// Call the async function to start the server
 startApolloServer();
