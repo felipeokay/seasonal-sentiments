@@ -39,18 +39,21 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card px-10 py-1 border border-red-400">
+    <div className="card max-w-xs my-2 mx-2 mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <Link to={`/products/${_id}`}>
         <img
           alt={name}
           src={`/images/${image}`}
+          className="w-full h-32 object-contain"
         />
-        <p>{name}</p>
+        <div className="p-3">
+          <p className="font-semibold text-md text-gray-800 truncate">{name}</p>
+        </div>
       </Link>
       <div>
-        <span>${price}</span>
+        <span className="text-gray-900 text-lg font-bold">${price}</span>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
+      <button onClick={addToCart} className="w-full bg-green-800 hover:bg-green-500 text-white font-semibold py-2 px-4 rounded-b">Add to cart</button>
     </div>
   );
 }

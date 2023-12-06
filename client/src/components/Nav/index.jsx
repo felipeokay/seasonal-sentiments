@@ -6,41 +6,45 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="flex-row">
+        <ul className="bg-gray-800 p-1">
           <li className="mx-10 m-5">
+          <div className="container mx-auto text-center my-2">
             {/* <div className="container mx-auto text-center"> */}
             <Link to="/store">
               Store
             </Link>
             {/* </div> */}
+            </div>
           </li>
           <li className="mx-10 m-5">
+          <div className="container mx-auto text-center my-2">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
+            </div>
           </li>
         </ul>
       );
     } else {
       return (
-        <ul className="flex-row">
+        <ul className="bg-gray-800 p-1">
           <li className="mx-10 m-5">
-            <div className="container mx-auto text-center my-10">
+            <div className="container mx-auto text-center my-2">
             <Link to="/store">
               Store
             </Link>
             </div>
           </li>
           <li className="mx-10 m-5">
-            <div className="container mx-auto text-center my-10">
+            <div className="container mx-auto text-center my-2">
             <Link to="/signup">
               Signup
             </Link>
             </div>
           </li>
           <li className="mx-10 m-5">
-            <div className="container mx-auto text-center my-10">
+            <div className="container mx-auto text-center my-2">
             <Link to="/login">
               Login
             </Link>
@@ -52,9 +56,9 @@ function Nav() {
   }
 
   return (
-    <header className="flex-row px-80">
+    <header className="bg-gray-800 p-1">
       <h1>
-      <div className="container mx-auto text-center m-3">
+      <div className="container mx-auto text-center m-2">
         <Link to="/">
           Seasonal Sentiments
         </Link>
