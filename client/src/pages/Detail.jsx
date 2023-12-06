@@ -83,12 +83,12 @@ function Detail() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1">
+        <div className="container my-10">
           <Link to="/store">← Back to Products</Link>
 
-          <h2>{currentProduct.name}</h2>
+          <h2 className="m-auto">{currentProduct.name}</h2>
 
-          <p>{currentProduct.description}</p>
+          <p className="my-10">{currentProduct.description}</p>
 
           <p>
             <strong>Price:</strong>${currentProduct.price}{' '}
