@@ -23,7 +23,7 @@ db.once('open', async () => {
       name: 'Happy Holidays',
       description:
         'A festive winter scene that defies the laws of physics',
-      image: 'Happy_Holidays.jpg',
+      image: 'Happy_Holidays.png',
       category: [categories[0]._id, categories[4]._id],
       price: .99,
       quantity: 500,
@@ -32,7 +32,7 @@ db.once('open', async () => {
       name: 'Happy Kwanzaa',
       description:
         'A festive kwanzaa scene',
-      image: 'Happy_Kwanzaa.jpg',
+      image: 'Happy_Kwanzaa.png',
       category: categories[0]._id,
       price: .99,
       quantity: 500,
@@ -87,7 +87,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Workplace holiday humor',
-      image: 'Seasons_Greetings_IIC.jpg',
+      image: 'Seasons_Greetings_IIC.png',
       price: .99,
       quantity: 500,
     },
@@ -176,7 +176,7 @@ db.once('open', async () => {
       category: categories[3]._id,
       description:
         'You are on the naughty list',
-      image: 'Merry_Christmas_B____.jpg',
+      image: 'Merry_Christmas_B____.png',
       price: .99,
       quantity: 500,
     }, 
