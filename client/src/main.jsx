@@ -10,6 +10,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Success from './pages/Success';
 import Store from './pages/Store';
+import Form from './pages/Form';
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,10 @@ const router = createBrowserRouter([
       }, {
         path: '/products/:id',
         element: <Detail />
-      }
+      }, {
+        path: '/form',
+        element: <Form />
+      },
     ]
   }
 ]);
