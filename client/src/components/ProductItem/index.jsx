@@ -39,7 +39,7 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card max-w-xs my-2 mx-2 mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <div className="card max-w-xs my-2 mx-3 mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <Link to={`/products/${_id}`}>
         <img
           alt={name}
