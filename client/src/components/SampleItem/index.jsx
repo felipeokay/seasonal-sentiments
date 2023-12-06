@@ -37,12 +37,12 @@ function SampleItem(item) {
   //   }
 
   return (
-    <div className="card max-w-xs my-2 mx-2 mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <div className="card max-w-xs my-14 mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <Link to={`/products/${_id}`} className="block">
         <img
           alt={name}
           src={`/images/${image}`}
-          className="w-full h-32 object-contain"
+          className="w-full h-60 object-contain"
         />
         <div className="p-3">
           <p className="font-semibold text-md text-gray-800 truncate">{name}</p>
