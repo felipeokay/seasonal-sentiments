@@ -41,6 +41,14 @@ body {
   color: var(--dark);
 }
 
+div.cart-closed {
+  background-color: aliceblue;
+}
+
+div.cart {
+  background-color: aliceblue;
+}
+
 h1,
 h2,
 h3,
