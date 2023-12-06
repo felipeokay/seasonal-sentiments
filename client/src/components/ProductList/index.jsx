@@ -8,7 +8,7 @@ import { idbPromise } from '../../utils/helpers';
 
 function ProductList() {
   const [state, dispatch] = useStoreContext();
-
+  console.log(state);
   const { currentCategory } = state;
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
@@ -64,6 +64,7 @@ function ProductList() {
               name={product.name}
               price={product.price}
               quantity={product.quantity}
+              image_url={product.image_url}
             />
           ))}
         </div>
