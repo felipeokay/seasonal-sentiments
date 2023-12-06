@@ -41,7 +41,7 @@ db.once('open', async () => {
       name: 'Laughter and Cheer',
       description:
         'A happy holiday family scene',
-      image: 'laughter and cheer.png',
+      image: 'laughter_and_cheer.png',
       category: categories[0]._id,
       price: .99,
       quantity: 500,
@@ -51,7 +51,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'A festive house during the holidays',
-      image: 'magical christmas.png',
+      image: 'magical_christmas.png',
       price: .99,
       quantity: 500,
     },
@@ -60,7 +60,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'Lovely place for the tree',
-      image: 'Merry Christmas, happy new year.png',
+      image: 'MerryChristmas_happynewyear.png',
       price: .99,
       quantity: 500,
     },
@@ -96,7 +96,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Sorry about the christmas house fire! Happy Holidays!',
-      image: 'Sorry about last year.png',
+      image: 'Sorryaboutlastyear.png',
       price: .99,
       quantity: 500,
     },
@@ -104,7 +104,7 @@ db.once('open', async () => {
       name: 'Tolerable Christmas',
       category: categories[1]._id,
       description: 'Just gotta get through it',
-      image: 'Tolerable Christmas.png',
+      image: 'TolerableChristmas.png',
       price: .99,
       quantity: 500,
     },
@@ -131,7 +131,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         'Elementary my dear snowman',
-      image: 'sherlock snow.png',
+      image: 'sherlock_snow.png',
       price: .99,
       quantity: 500,
     }, 
@@ -149,7 +149,7 @@ db.once('open', async () => {
       category: categories[3]._id,
       description:
         'Gotta hand it to her',
-      image: 'chaotic lovelife.png',
+      image: 'chaotic_lovelife.png',
       price: .99,
       quantity: 500,
     }, 
@@ -158,7 +158,7 @@ db.once('open', async () => {
       category: [categories[3]._id, categories[4]._id],
       description:
         'Go ahead and add in that rum',
-      image: 'drink eggnog.png',
+      image: 'drink_eggnog.png',
       price: .99,
       quantity: 500,
     }, 
@@ -167,7 +167,7 @@ db.once('open', async () => {
       category: categories[3]._id,
       description:
         'Shots for Santa!',
-      image: 'merry drunk.png',
+      image: 'merry_drunk.png',
       price: .99,
       quantity: 500,
     }, 
@@ -176,7 +176,7 @@ db.once('open', async () => {
       category: categories[3]._id,
       description:
         'You are on the naughty list',
-      image: 'Merry_Christmas_B____.png',
+      image: 'MerryChristmasB.png',
       price: .99,
       quantity: 500,
     }, 
@@ -185,7 +185,7 @@ db.once('open', async () => {
       category: categories[3]._id,
       description:
         'Save the neck for me, Clark',
-      image: 'sh_____ was full!.png',
+      image: 'shwasfull.png',
       price: .99,
       quantity: 500,
     }, 
