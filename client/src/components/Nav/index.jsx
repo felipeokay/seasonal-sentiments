@@ -27,7 +27,7 @@ function Nav() {
       );
     } else {
       return (
-        <ul className="bg-gray-800 p-1">
+        <ul>
           <li className="mx-10 m-5">
             <div className="container mx-auto text-center my-2">
               <Link to="/store">
