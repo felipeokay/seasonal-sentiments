@@ -53,7 +53,6 @@ function SampleList() {
   }
 
   return (
-    <div className="hero">
     <div className="my-40 text-center">
       <h2>Popular Easy Picks!</h2>
       {state.products.length ? (
@@ -72,7 +71,6 @@ function SampleList() {
       ) : (
         <h3>You haven't added any products yet!</h3>
       )}
-    </div>
     </div>
   );
 }
