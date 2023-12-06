@@ -15,35 +15,38 @@ function SampleItem(item) {
 
   const { cart } = state
 
-//   const addToCart = () => {
-//     const itemInCart = cart.find((cartItem) => cartItem._id === _id)
-//     if (itemInCart) {
-//       dispatch({
-//         type: UPDATE_CART_QUANTITY,
-//         _id: _id,
-//         purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
-//       });
-//       idbPromise('cart', 'put', {
-//         ...itemInCart,
-//         purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
-//       });
-//     } else {
-//       dispatch({
-//         type: ADD_TO_CART,
-//         product: { ...item, purchaseQuantity: 1 }
-//       });
-//       idbPromise('cart', 'put', { ...item, purchaseQuantity: 1 });
-//     }
-//   }
+  //   const addToCart = () => {
+  //     const itemInCart = cart.find((cartItem) => cartItem._id === _id)
+  //     if (itemInCart) {
+  //       dispatch({
+  //         type: UPDATE_CART_QUANTITY,
+  //         _id: _id,
+  //         purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
+  //       });
+  //       idbPromise('cart', 'put', {
+  //         ...itemInCart,
+  //         purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
+  //       });
+  //     } else {
+  //       dispatch({
+  //         type: ADD_TO_CART,
+  //         product: { ...item, purchaseQuantity: 1 }
+  //       });
+  //       idbPromise('cart', 'put', { ...item, purchaseQuantity: 1 });
+  //     }
+  //   }
 
   return (
-    <div className="card px-1 py-1">
-      <Link to={`/products/${_id}`}>
+    <div className="card max-w-xs my-2 mx-2 mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <Link to={`/products/${_id}`} className="block">
         <img
           alt={name}
           src={`/images/${image}`}
+          className="w-full h-32 object-contain"
         />
-        <p>{name}</p>
+        <div className="p-3">
+          <p className="font-semibold text-md text-gray-800 truncate">{name}</p>
+        </div>
       </Link>
     </div>
   );

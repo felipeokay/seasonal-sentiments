@@ -1,7 +1,7 @@
-import ReactDOM from 'react-dom/client'
-import './index.css'
+import ReactDOM from 'react-dom/client';
+import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
+import React from 'react';
 import App from './App.jsx';
 import Home from './pages/Home';
 import Detail from './pages/Detail';
@@ -10,6 +10,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Success from './pages/Success';
 import Store from './pages/Store';
+import Form from './pages/Form';
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,10 @@ const router = createBrowserRouter([
       }, {
         path: '/products/:id',
         element: <Detail />
-      }
+      }, {
+        path: '/form',
+        element: <Form />
+      },
     ]
   }
 ]);

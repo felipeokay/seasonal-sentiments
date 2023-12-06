@@ -30,8 +30,7 @@ function Login(props) {
   };
 
   return (
-    <div className="hero">
-    <div className="container my-60">
+    <div className="max-w-md mx-auto bg-white p-8 rounded-md shadow-md mt-8 my-60">
       <Link to="/signup">← Go to Signup</Link>
 
       <h2>Login</h2>
@@ -65,7 +64,6 @@ function Login(props) {
           <button type="submit">Submit</button>
         </div>
       </form>
-    </div>
     </div>
   );
 }
