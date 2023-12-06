@@ -12,7 +12,7 @@
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
-  background: whitesmoke url("./images/snowytrees.jpg") center center / cover no-repeat;
+  background: whitesmoke url("./images/village.jpg") center center / cover no-repeat;
 }
 
 
@@ -98,6 +98,7 @@ a:hover {
 
 header {
   background: var(--primary);
+  background: whitesmoke url("./images/lights.jpg") center center / cover no-repeat;
 }
 
 header a {
@@ -135,6 +136,10 @@ span[role="img"] {
 
 form {
   width: 40%;
+}
+
+ul {
+color: white;
 }
 
 input {
