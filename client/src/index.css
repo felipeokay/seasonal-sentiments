@@ -101,9 +101,21 @@ a:hover {
   text-decoration: underline;
 }
 
+header {
+  background-image: url("/src/images/lights.jpg");
+  background-size: cover;
+  background-position: center; /* Optional: Center the background image */
+  background-repeat: no-repeat;
+  
+}
+
+
+
+
 
 header a {
   color: var(--light);
+  
 }
 
 button {
