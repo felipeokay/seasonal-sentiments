@@ -12,17 +12,8 @@
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
-<<<<<<< HEAD
-  background: whitesmoke url("./images/village.jpg") center center / cover no-repeat;
-}
-
-
-.hero {
-  background-image: url("./images/snowfall.jpg");
-=======
   background-color: whitesmoke;
-  background-image: url("/src/images/coolsnow.jpg");
->>>>>>> 33e7657e7cad283d3203be57e33986258bf52e07
+  background-image: url("/src/images/village.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,6 +80,7 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  color: white;
 }
 
 a {
@@ -102,8 +94,8 @@ a:hover {
 }
 
 header {
-  background: var(--primary);
-  background: whitesmoke url("./images/lights.jpg") center center / cover no-repeat;
+
+  
 }
 
 header a {
@@ -119,7 +111,9 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: red;
+  color: white;
+  font-weight: bolder;
 }
 
 button:hover {
@@ -221,11 +215,19 @@ input:focus {
   padding-bottom: var(--spacing-two);
 }
 
+
 .card {
   width: 25%;
+  background-color: #1bbf70;
   text-align: center;
   border-radius: 20px;
   overflow: hidden;
+  margin: 2px;
+  border: black;
+}
+
+img {
+  border-radius: 20px;
 }
 
 .error-text {
