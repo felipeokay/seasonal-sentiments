@@ -9,6 +9,7 @@ const typeDefs = `
     name: String
     description: String
     image: String
+    image_url: String
     quantity: Int
     price: Float
     category: [Category]
@@ -42,6 +43,7 @@ const typeDefs = `
     purchaseQuantity: Int
     name: String
     image: String
+    image_url: String
     price: Float
     quantity: Int
   }

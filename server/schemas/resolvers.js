@@ -1,6 +1,7 @@
 const { User, Product, Category, Order } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 require('dotenv').config()
+
 const stripe = require('stripe')(process.env.SECRETKEY);
 
 const resolvers = {
@@ -82,7 +83,7 @@ const resolvers = {
                 payment_method_types: ['card'],
                 line_items,
                 mode: 'payment',
-                success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
+                success_url: `${url}/form?session_id={CHECKOUT_SESSION_ID}`,
                 cancel_url: `${url}/`,
             });
 
