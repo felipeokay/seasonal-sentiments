@@ -53,6 +53,8 @@ const resolvers = {
             throw AuthenticationError;
         },
         checkout: async (parent, args, context) => {
+            console.log('Checkout Resolver - Starting checkout process');
+
             const url = new URL(context.headers.referer).origin;
             await Order.create({ products: args.products.map(({ _id }) => _id) });
             // eslint-disable-next-line camelcase
@@ -74,6 +76,8 @@ const resolvers = {
                 });
             }
 
+            console.log('Checkout Resolver - Line items:', line_items);
+
             const session = await stripe.checkout.sessions.create({
                 payment_method_types: ['card'],
                 line_items,
@@ -81,6 +85,8 @@ const resolvers = {
                 success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
                 cancel_url: `${url}/`,
             });
+
+            console.log('Checkout Resolver - Checkout session created:', session);
 
             return { session: session.id };
         },
@@ -93,10 +99,15 @@ const resolvers = {
             return { token, user };
         },
         addOrder: async (parent, { products }, context) => {
+
+            console.log('Add Order Mutation - Adding order to user');
+
             if (context.user) {
                 const order = new Order({ products });
 
                 await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } });
+
+            console.log('Add Order Mutation - Order added to user:', order);
 
                 return order;
             }
@@ -111,9 +122,15 @@ const resolvers = {
             throw AuthenticationError;
         },
         updateProduct: async (parent, { _id, quantity }) => {
+            console.log('Update Product Mutation - Updating product quantity');
+
+
             const decrement = Math.abs(quantity) * -1;
 
             return await Product.findByIdAndUpdate(_id, { $inc: { quantity: decrement } }, { new: true });
+
+            console.log('Update Product Mutation - Product updated:', updatedProduct);
+
         },
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
