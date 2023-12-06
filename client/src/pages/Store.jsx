@@ -4,14 +4,15 @@ import Cart from "../components/Cart";
 
 const Home = () => {
   return (
-    <div className = "hero">
-      < div className = "container" >
-      <CategoryMenu />
-      <ProductList />
-      <Cart />
-    </div >
-    </div >
+    <div className="hero">
+      <div className="container">
+        <CategoryMenu />
+        <ProductList />
+        <Cart className="cartContainer" />
+      </div>
+    </div>
   );
 };
 
 export default Home;
+
