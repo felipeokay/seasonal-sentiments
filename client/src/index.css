@@ -12,11 +12,12 @@
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
-  background-color: whitesmoke;
+  background: whitesmoke url("./images/snowytrees.jpg") center center / cover no-repeat;
 }
 
+
 .hero {
-  background-image: url("/src/images/coolsnow.jpg");
+  background-image: url("./images/snowfall.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
