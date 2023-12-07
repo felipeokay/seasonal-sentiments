@@ -39,21 +39,21 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card max-w-xs my-2 mx-3 mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <div className="card max-w-xs my-10 mx-3 mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <Link to={`/products/${_id}`}>
         <img
           alt={name}
           src={`/images/${image}`}
-          className="w-full h-32 object-contain"
+          className="w-full h-36 object-contain"
         />
         <div className="p-3">
           <p className="font-semibold text-md text-gray-800 truncate">{name}</p>
         </div>
       </Link>
       <div>
-        <span className="text-gray-900 text-lg font-bold">${price}</span>
+        <span className="text-gray-900 text-xl font-bold">${price}</span>
       </div>
-      <button onClick={addToCart} className="w-full bg-green-800 hover:bg-green-500 text-white font-semibold py-2 px-4 rounded-b">Add to cart</button>
+      <button onClick={addToCart} className="w-full bg-green-800 hover:bg-green-500 text-white font-semibold py-2 px-20 rounded-b">Add to cart</button>
     </div>
   );
 }
