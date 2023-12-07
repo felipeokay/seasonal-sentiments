@@ -54,9 +54,9 @@ function SampleList() {
 
   return (
     <div className="my-40 text-center">
-      <h2>Popular Easy Picks!</h2>
+      <h2 className="text-4xl font-semibold text-green-700 mb-8">Popular Easy Picks!</h2>
       {state.products.length ? (
-        <div className="flex-row my-20 m-auto">
+        <div className="flex flex-wrap justify-center">
           {filterProducts().map((product) => (
             <SampleItem
               key={product._id}

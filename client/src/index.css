@@ -13,7 +13,7 @@
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   background-color: whitesmoke;
-  background-image: url("/src/images/snoww.jpg");
+  background-image: url("/src/images/redTinsel.png");
   /* height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -118,8 +118,8 @@ a:hover {
 
 header {
 
-  background: var(--primary);
-  background-image: url("/src/images/lightblur.jpg");
+  background-color: whitesmoke;
+  /* background-image: url("/src/images/ribred.png"); */
   background-size: cover;
   background-position: center;
   /* Optional: Center the background image */
@@ -134,12 +134,12 @@ header a {
 button {
   font-size: 1rem;
   text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  padding: 10px 20px;
+  border-radius: 10px;
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 0 1px;
+  margin: auto;
   background-color: red;
   color: black;
   font-weight: bolder;
@@ -192,10 +192,10 @@ input:focus {
   margin-right: auto;
 }
 
-.flex-row {
+/* .flex-row {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 .space-between {
   justify-content: space-between;
@@ -245,8 +245,8 @@ input:focus {
   padding-bottom: var(--spacing-two);
 }
 
-
-/* .card {
+/* 
+.card {
   width: 20%;
   background-color: #1bbf70;
   text-align: center;

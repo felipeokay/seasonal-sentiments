@@ -37,7 +37,7 @@ function SampleItem(item) {
   //   }
 
   return (
-    <div className="card max-w-xs my-16 mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <div className="max-w-md mx-14 mb-14 bg-white border border-gray-300 rounded-xl overflow-hidden shadow-md">
       <Link to={`/products/${_id}`} className="block">
         <img
           alt={name}

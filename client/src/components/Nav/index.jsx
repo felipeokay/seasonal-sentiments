@@ -28,21 +28,21 @@ function Nav() {
     } else {
       return (
         <ul>
-          <li className="mx-10 m-5">
+          <li>
             <div className="container mx-auto text-center my-2">
               <Link to="/store">
                 Store
               </Link>
             </div>
           </li>
-          <li className="mx-10 m-5">
+          <li>
             <div className="container mx-auto text-center my-2">
               <Link to="/signup">
                 Signup
               </Link>
             </div>
           </li>
-          <li className="mx-10 m-5">
+          <li>
             <div className="container mx-auto text-center my-2">
               <Link to="/login">
                 Login
@@ -57,7 +57,7 @@ function Nav() {
   return (
     <header className="flex-row">
    <h1>
-        <div className="container mx-auto text-center m-2">
+        <div className="container mx-auto text-center m-1">
           <Link to="/">
             Seasonal Sentiments
           </Link>

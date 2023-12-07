@@ -42,10 +42,11 @@ function CategoryMenu() {
   };
 
   return (
-    <div>
-      <h2>Choose a Category:</h2>
+    <div className="flex justify-center">
+      {/* <h2>Choose a Category:</h2> */}
       {categories.map((item) => (
         <button
+          className="text-xl m-3 py-2 bg-red-600"
           key={item._id}
           onClick={() => {
             handleClick(item._id);
@@ -54,7 +55,9 @@ function CategoryMenu() {
           {item.name}
         </button>
       ))}
-      <button onClick={() => { handleClick('') }}>
+      <button
+        className="text-xl m-3 py-2 bg-red-600"
+        onClick={() => { handleClick('') }}>
         All
       </button>
     </div>
