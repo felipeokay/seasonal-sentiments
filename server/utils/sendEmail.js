@@ -16,9 +16,9 @@ const sendEmail = async (subject, message, send_to, sent_from, reply_to, imageUr
 
 const htmlMessage = `
   <html>
-    <body style="margin: 0; padding: 20px; background-color: #FF0000;">
+    <body style="margin: 0; padding: 20px; background-color: #113b71;">
       <div style="width: 100%; max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 10px;">
-        <p>Dear ${friendName}</p>
+        <p>Dear ${friendName},</p>
         <p>${message}</p>
         <p>Warm regards,</p>
         <p>${senderName}</p>

@@ -72,22 +72,19 @@ function Form() {
   };
 
   return (
-    <div className="container">
-      <div>
+    <div className="max-w-lg mx-auto bg-[#4d6242] p-12 rounded-md shadow-md mt-8 my-10">      
         <img src={cartImageUrl}/>
-        <form onSubmit={sendEmail}>
-          <div>
-            <label htmlFor="senderName">Your name:</label>
-            <input
+        <form className='w-400' onSubmit={sendEmail}>
+           <label className='text-white' htmlFor="senderName">Your name: </label>
+            <input className="w-100 block"
               type="text"
               id="senderName"
               required
               value={senderName}
               onChange={(e) => setSenderName(e.target.value)}
             />
-          </div>
-          <div>
-            <label htmlFor="friendName">Friend's name:</label>
+          
+            <label className='text-white' htmlFor="friendName">Friend's name: </label>
             <input
               type="text"
               id="friendName"
@@ -95,9 +92,9 @@ function Form() {
               value={friendName}
               onChange={(e) => setFriendName(e.target.value)}
             />
-          </div>
-          <div>
-            <label htmlFor="email">Friend's Email:</label>
+          
+          
+            <label className='text-white' htmlFor="email">Friend's Email: </label>
             <input
               type="email"
               id="email"
@@ -105,16 +102,15 @@ function Form() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-          </div>
-          <div>
-            <label htmlFor="message">Include a personal message:</label>
+          
+            <label className='text-white' htmlFor="message">Include a personal message: </label>
             <input
-              type="text"
+              type="textarea"
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
-          </div>
+          
           {/* <div>
             <label htmlFor="bccEmails">BCC Recipients:</label>
             {bccEmails.map((bccEmail, index) => (
@@ -132,13 +128,12 @@ function Form() {
               Add BCC Recipient
             </button>
           </div> */}
-          <div>
-            <button type="submit">Send Card</button>
-          </div>
+          
+            <button className='text-white' type="submit">Send Card</button>
+          
         </form>
         {successMessage && <p>{successMessage}</p>}
-      </div>
-    </div>
+      </div>    
   );
 }
 
