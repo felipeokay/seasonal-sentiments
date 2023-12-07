@@ -149,6 +149,7 @@ button {
 
 button:hover {
   opacity: .8;
+  background-color: red;
 }
 
 button[disabled] {
