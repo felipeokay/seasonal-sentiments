@@ -57,6 +57,7 @@ function Nav() {
   return (
     <header className="flex-row">
    <h1>
+       <h1>
         <div className="container mx-auto text-center m-2">
           <Link to="/">
             Seasonal Sentiments
