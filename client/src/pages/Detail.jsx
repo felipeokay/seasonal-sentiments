@@ -90,7 +90,7 @@ function Detail() {
 
           <p className="flex items-center text-white justify-center">{currentProduct.description}</p>
 
-          <p>
+          
           <div className="flex text-white items-center justify-center">
             <strong>
               Price:
@@ -109,7 +109,7 @@ function Detail() {
               Remove from Cart
             </button>
             </div>
-          </p>
+          
 
           <img
             className="w-full"
