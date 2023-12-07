@@ -117,11 +117,12 @@ a:hover {
 }
 
 header {
+
+  background: var(--primary);
   background-image: url("/src/images/lightblur.jpg");
   background-size: cover;
   background-position: center; /* Optional: Center the background image */
   background-repeat: no-repeat;
-  
 }
 
 
