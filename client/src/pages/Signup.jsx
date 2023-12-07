@@ -31,7 +31,7 @@ function Signup(props) {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-green-300 p-10 rounded-md shadow-md mt-8 my-20">
+    <div className="max-w-md mx-auto bg-[#4d6242] p-10 rounded-md shadow-md mt-8 my-20">
       <Link to="/login">← Go to Login</Link>
 
       <h2>Signup</h2>

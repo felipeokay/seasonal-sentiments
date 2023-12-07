@@ -30,7 +30,7 @@ function Login(props) {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-green-300 p-14 rounded-md shadow-md mt-8 my-60">
+    <div className="max-w-md mx-auto bg-[#4d6242] p-14 rounded-md shadow-md mt-8 my-60">
       <Link to="/signup">← Go to Signup</Link>
 
       <h2>Login</h2>
@@ -61,7 +61,7 @@ function Login(props) {
           </div>
         ) : null}
         <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
+          <button className='text-white'type="submit">Submit</button>
         </div>
       </form>
     </div>
