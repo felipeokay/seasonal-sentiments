@@ -53,7 +53,7 @@ function ProductItem(item) {
       <div>
         <span className="flex justify-center text-xl font-bold">${price}</span>
       </div>
-      <button onClick={addToCart} className="w-full bg-green-800 hover:bg-green-500 text-white font-semibold py-2 px-20 rounded-b">Add to cart</button>
+      <button onClick={addToCart} className="w-full bg-[#4d6242] hover:bg-green-500 text-white font-semibold py-2 px-20 rounded-b">Add to cart</button>
     </div>
   );
 }

@@ -83,15 +83,15 @@ function Detail() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="max-w-md mx-auto bg-green-300 p-12 rounded-md shadow-md mt-8 my-10">
-          <Link to="/store">← Back to Products</Link>
+        <div className="max-w-lg mx-auto bg-[#4d6242] p-12 rounded-md shadow-md mt-8 my-10">
+          <Link to="/store" className='text-white'>← Back to Products</Link>
 
-          <h2 className="m-auto">{currentProduct.name}</h2>
+          <h2 className="m-auto text-white">{currentProduct.name}</h2>
 
-          <p className="flex items-center justify-center">{currentProduct.description}</p>
+          <p className="flex items-center text-white justify-center">{currentProduct.description}</p>
 
           <p>
-          <div className="flex items-center justify-center">
+          <div className="flex text-white items-center justify-center">
             <strong>
               Price:
               </strong>${currentProduct.price}{' '}
