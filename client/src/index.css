@@ -14,12 +14,12 @@
   --spacing-two: calc(1rem);
   background-color: whitesmoke;
   background-image: url("/src/images/snoww.jpg");
-  height: 100%;
+  /* height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  border-radius: 20px;
+  border-radius: 20px; */
 }
 
 a {
@@ -70,9 +70,9 @@ h1 {
 }
 
 .div.container {
-display: flex;
-flex-direction: row;
-justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
 }
 
@@ -81,7 +81,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+
 }
 
 h3 {
@@ -121,17 +121,14 @@ header {
   background: var(--primary);
   background-image: url("/src/images/lightblur.jpg");
   background-size: cover;
-  background-position: center; /* Optional: Center the background image */
+  background-position: center;
+  /* Optional: Center the background image */
   background-repeat: no-repeat;
 }
 
-
-
-
-
 header a {
   color: var(--light);
-  
+
 }
 
 button {
@@ -144,7 +141,7 @@ button {
   cursor: pointer;
   margin: 0 1px;
   background-color: red;
-  color: white;
+  color: black;
   font-weight: bolder;
 }
 
@@ -171,7 +168,7 @@ form {
 }
 
 ul {
-color: white;
+  color: white;
 }
 
 input {
@@ -249,26 +246,28 @@ input:focus {
 }
 
 
-.card {
-  width: 25%;
+/* .card {
+  width: 20%;
   background-color: #1bbf70;
   text-align: center;
   border-radius: 20px;
   overflow: hidden;
-  margin: 6px;
+  margin: auto;
   border: black;
-}
+} */
 
 footer {
-  position: absolute;
+  position: absolute, fixed bottom;
   width: 100%;
   bottom: 0px;
   background-color: #1bbf70;
-  margin-top: 180px;
+  padding: 10px;
+  margin-top: auto;
 }
 
 img {
   border-radius: 20px;
+  width: 35%;
   transition: opacity .3s;
 }
 
