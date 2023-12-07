@@ -5,7 +5,7 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="bg-gray-800 p-1">
+        <ul>
           <li className="mx-10 m-5">
             <div className="container mx-auto text-center my-2">
               <div className="container mx-auto text-center">
@@ -27,7 +27,7 @@ function Nav() {
       );
     } else {
       return (
-        <ul className="bg-gray-800 p-1">
+        <ul>
           <li className="mx-10 m-5">
             <div className="container mx-auto text-center my-2">
               <Link to="/store">
@@ -55,7 +55,7 @@ function Nav() {
   }
 
   return (
-    <header className="bg-gray-800 p-1">
+    <header className="flex-row">
       <h1>
         <div className="container mx-auto text-center m-2">
           <Link to="/">

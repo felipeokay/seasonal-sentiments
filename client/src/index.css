@@ -93,6 +93,7 @@ a:hover {
 
 header {
   background: var(--primary);
+  background-image: url("/src/images/lightblur.jpg");
 }
 
 header a {
