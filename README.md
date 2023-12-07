@@ -25,7 +25,7 @@ Navigate to the deployed site using the link below and enjoy!
 
 Here is the deployed app: [Check it out!](https://Insert.Real.URL.HERE.herokuapp.com/)
 
-![Screenshot of Seasonal Sentiment](./views/assets/screenshot.png)
+![Screenshot of Seasonal Sentiment](./client/public/images/seasonal-semtiments-screenshot.png)
 
 ## Credits
 
