@@ -1,5 +1,7 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useStoreContext } from '../utils/GlobalState';
+import { idbPromise } from '../utils/helpers'
 
 function Form() {
   const [email, setEmail] = useState("");
@@ -9,6 +11,11 @@ function Form() {
   const [friendName, setFriendName] = useState("");
   // const [bccEmails, setBccEmails] = useState([""]);
   const [successMessage, setSuccessMessage] = useState("");
+  const [state, dispatch] = useStoreContext();
+  console.log(state);
+
+  const [cartImageUrl, setCartImageUrl] = useState('');
+
 
   // const handleBccEmailChange = (index, value) => {
   //   const updatedBccEmails = [...bccEmails];
@@ -20,20 +27,28 @@ function Form() {
   //   setBccEmails([...bccEmails, ""]);
   // };
 
+  useEffect(() => {
+    async function getCart() {
+      const cart = await idbPromise('cart', 'get');
+      console.log(cart);
+      setCartImageUrl(cart[0].image_url)
+    }
+    getCart();
+  }, [])
+
+
   const sendEmail = async (e) => {
     e.preventDefault();
 
     const imageUrl =
-      imageChoice === "green"
-        ? "https://i.imgur.com/zLJlwrX.png"
-        : "https://i.imgur.com/NQbHvXR.png";
+      state.image_url;
 
     const data = {
       email,
       message,
       senderName,
       friendName,
-      imageUrl,
+      imageUrl: cartImageUrl,
       // bccEmails,
     };
 
@@ -59,6 +74,7 @@ function Form() {
   return (
     <div className="container">
       <div>
+        <img src={cartImageUrl}/>
         <form onSubmit={sendEmail}>
           <div>
             <label htmlFor="senderName">Your name:</label>
@@ -116,31 +132,6 @@ function Form() {
               Add BCC Recipient
             </button>
           </div> */}
-          <div>
-            <label>Choose Image:</label>
-            <div>
-              <input
-                type="radio"
-                id="greenImage"
-                name="imageChoice"
-                value="green"
-                checked={imageChoice === "green"}
-                onChange={() => setImageChoice("green")}
-              />
-              <label htmlFor="greenImage">Green Image</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="blueImage"
-                name="imageChoice"
-                value="blue"
-                checked={imageChoice === "blue"}
-                onChange={() => setImageChoice("blue")}
-              />
-              <label htmlFor="blueImage">Blue Image</label>
-            </div>
-          </div>
           <div>
             <button type="submit">Send Card</button>
           </div>

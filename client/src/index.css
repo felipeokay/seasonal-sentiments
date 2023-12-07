@@ -13,12 +13,17 @@
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   background-color: whitesmoke;
-  background-image: url("/src/images/coolsnow.jpg");
+  background-image: url("/src/images/snoww.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  border-radius: 20px;
+}
+
+a {
+  margin-bottom: 20px;
 }
 
 * {
@@ -40,6 +45,14 @@ body {
   color: var(--dark);
 }
 
+div.cart-closed {
+  background-color: aliceblue;
+}
+
+div.cart {
+  background-color: aliceblue;
+}
+
 h1,
 h2,
 h3,
@@ -56,8 +69,19 @@ h1 {
   font-size: 2.25rem;
 }
 
+.div.container {
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
 h2 {
   font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
 }
 
 h3 {
@@ -79,6 +103,7 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  color: white;
 }
 
 a {
@@ -92,12 +117,21 @@ a:hover {
 }
 
 header {
+
   background: var(--primary);
   background-image: url("/src/images/lightblur.jpg");
+  background-size: cover;
+  background-position: center; /* Optional: Center the background image */
+  background-repeat: no-repeat;
 }
+
+
+
+
 
 header a {
   color: var(--light);
+  
 }
 
 button {
@@ -109,11 +143,14 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: red;
+  color: white;
+  font-weight: bolder;
 }
 
 button:hover {
   opacity: .8;
+  background-color: red;
 }
 
 button[disabled] {
@@ -131,6 +168,10 @@ span[role="img"] {
 
 form {
   width: 40%;
+}
+
+ul {
+color: white;
 }
 
 input {
@@ -207,9 +248,32 @@ input:focus {
   padding-bottom: var(--spacing-two);
 }
 
+
 .card {
   width: 25%;
+  background-color: #1bbf70;
   text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 6px;
+  border: black;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  background-color: #1bbf70;
+  margin-top: 180px;
+}
+
+img {
+  border-radius: 20px;
+  transition: opacity .3s;
+}
+
+img:hover {
+  opacity: 0.6;
 }
 
 .error-text {
