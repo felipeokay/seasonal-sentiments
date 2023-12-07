@@ -13,13 +13,17 @@
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   background-color: whitesmoke;
-  background-image: url("/src/images/village.jpg");
+  background-image: url("/src/images/snoww.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   border-radius: 20px;
+}
+
+a {
+  margin-bottom: 20px;
 }
 
 * {
@@ -65,8 +69,19 @@ h1 {
   font-size: 2.25rem;
 }
 
+.div.container {
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
 h2 {
   font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
 }
 
 h3 {
@@ -102,7 +117,7 @@ a:hover {
 }
 
 header {
-  background-image: url("/src/images/lights.jpg");
+  background-image: url("/src/images/lightblur.jpg");
   background-size: cover;
   background-position: center; /* Optional: Center the background image */
   background-repeat: no-repeat;
@@ -134,6 +149,7 @@ button {
 
 button:hover {
   opacity: .8;
+  background-color: red;
 }
 
 button[disabled] {
@@ -240,6 +256,14 @@ input:focus {
   overflow: hidden;
   margin: 6px;
   border: black;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  background-color: #1bbf70;
+  margin-top: 180px;
 }
 
 img {
